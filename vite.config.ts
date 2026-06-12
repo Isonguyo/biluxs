@@ -9,6 +9,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // TanStack Start configuration for Vercel deployment
 export default defineConfig({
   tanstackStart: {
-    server: { entry: "server" },
+    server: { 
+      entry: "server",
+      preset: "vercel" // 👈 Add this line right here
+    },
   },
 });
